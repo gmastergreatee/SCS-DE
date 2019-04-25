@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Self Scripts</title>
+    <script src="./jquery.min.js"></script>
+    <script src="./index.js"></script>
+</head>
+
+<body>
+    <div style="display:flex;justify-content: space-evenly">
+        <a href="/address-fixer.html">Address Fixer</a>
+        <a href="/stud-name-fixer.html">Student Name Fixer</a>
+        <a href="/parent-name-fixer.html">Parent Name Fixer</a>
+        <a href="/string-replacer.html">String Replacer</a>
+        <a href="/dob-fixer.html">DOB Replacer</a>
+    </div>
+    <h3 style="margin-bottom: 10px">String Replacer</h3>
+    <textarea id="txt-str-replace" style="height:300px;width:100%" placeholder="Enter target string here"></textarea>
+    <div style="text-align:right;margin-bottom:5px">
+        <div style="display:inline-block;vertical-align: middle">
+
+            <table>
+                <tr>
+                    <th>
+                        <input type="checkbox" id="txt-ignore-case" style="width:20px;height:20px">
+                    </th>
+                    <td style="padding-right:25px">
+                        Ignore Casing
+                    </td>
+                    <th>
+                        String to Search :
+                    </th>
+                    <td>
+                        <input type="text" id="txt-replace-from">
+                    </td>
+                    <th>
+                        String to Replace :
+                    </th>
+                    <td>
+                        <input type="text" id="txt-replace-to">
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <button type="button" id="btn-str-replace">Replace String</button>
+        <div style="float:left;padding-top:5px;color:#494949">
+            <b>
+                Regex search is turned ON
+            </b>
+        </div>
+    </div>
+    <h3 style="margin-bottom:5px;margin-top:5px;text-decoration: underline">
+        Preview
+        <span style="float:right" id="replace-str-matches">
+            Matches : 0
+        </span>
+        </h4>
+        <textarea id="txt-str-replace-preview" style="height:300px;width:100%" placeholder="Enter target string here"
+            readonly></textarea>
+</body>
+
+</html>
