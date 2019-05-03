@@ -103,8 +103,13 @@ $(document).ready(function () {
             let addSpl = [];
             el = el.trim();
             if (el.indexOf('\t') >= 0) {
+                // split with tab
                 addSpl = el.split('\t');
+            } else if (el.indexOf(',') >= 0) {
+                // split with comma
+                addSpl = el.split(',');
             } else if (el.indexOf(' ') >= 0) {
+                // split with space
                 addSpl = el.split(' ');
             } else {
                 addSpl.push(el);
